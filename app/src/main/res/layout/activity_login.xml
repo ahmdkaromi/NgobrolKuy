@@ -75,13 +75,15 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Masukkan username Anda"
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:id="@+id/usernameLogin"
+                android:inputType="text"
+                android:hint="Masukkan username Anda"
                 android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                />
 
         </androidx.cardview.widget.CardView>
 
@@ -102,24 +104,29 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Masukkan password Anda"
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:id="@+id/passwordLogin"
+                android:inputType="textPassword"
+                android:hint="Masukkan password Anda"
                 android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                />
 
         </androidx.cardview.widget.CardView>
 
         <TextView
+            android:id="@+id/lupa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:text="Lupa password?"
             android:fontFamily="@font/redhatdisplay_regular"
             android:textColor="@color/white"
-            android:textSize="8pt"/>
+            android:textSize="8pt"
+            android:clickable="true"
+            android:onClick="click"/>
 
     </LinearLayout>
 
@@ -134,6 +141,9 @@
         android:layout_marginTop="32dp">
 
         <TextView
+            android:id="@+id/loginlogin"
+            android:clickable="true"
+            android:onClick="click"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="LOGIN"
@@ -149,6 +159,9 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/belum"
+        android:clickable="true"
+        android:onClick="click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Belum punya akun?"
